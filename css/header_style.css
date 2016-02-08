@@ -151,7 +151,7 @@
 }
 
 .menu_item_l1 > a{
-	border-left: 1px solid #75c459;
+	/*border-left: 1px solid #75c459;*/
 	font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -160,7 +160,7 @@
     height: 42px;
     line-height: 43px;
     font-family: "Electra Font", Arial, Helvetica, sans-serif;
-    color: white;
+    color: white!important;
 }
 
 .menu_item_l1 {
@@ -178,6 +178,17 @@
     background: -ms-linear-gradient(top, #5ab934 1%,#258a0f 100%);
     background: linear-gradient(to bottom, #5ab934 1%,#258a0f 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ab934', endColorstr='#258a0f',GradientType=0);*/
+}
+
+a.first-li {
+    display: block;
+    border-left: 0px solid black!important;
+}
+
+.menu_item_l1 > a:hover, .menu_item_l1 > a:active, .menu_item_l1 > a:focus {
+    background: #4da02b!important;
+    color: #f3ff8c!important;
+    border-radius: 4px 0px 0px 4px!important;   
 }
 
 .search_field1 {
