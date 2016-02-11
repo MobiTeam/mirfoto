@@ -1,0 +1,24 @@
+.contacts_head{
+
+	padding: 10px
+
+}
+.contacts_about{
+
+	padding-left: 20px;
+}
+.contacts_adress{
+
+	list-style-type: none;
+}
+
+.contacts_feedback{
+	padding-left: 30px;
+	margin: 10px auto;
+
+}
+.contacts_name_feedback{
+
+	margin-bottom: 0px!important;
+	margin-left: 5px!important;
+}
