@@ -1,6 +1,6 @@
 .contacts_head{
 
-	padding: 10px
+	/*padding: 10px*/
 
 }
 .contacts_about{
@@ -21,4 +21,17 @@
 
 	margin-bottom: 0px!important;
 	margin-left: 5px!important;
+}
+
+.center-align {
+	max-width: 980px;
+	margin: 0 40px 30px 40px;
+}
+
+.contacts_input, .form-control {
+	margin-top: 3px;
+}
+
+.breadcrumb a {
+	color: #3aa51a;
 }
