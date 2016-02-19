@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#map_layout {
+	border: 1px solid grey;
+}
+
+.wrapper {
+	width: 1024px;
+	margin: 20px auto;
+}
+
+#map_layout {
+	/*background: url('../img/iphone_4_4s_black.png');*/
+}
+
+.constr_h3 {
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+.phone_title_cr {
+	color: grey;
+}
+
+.btn-load-image {
+	position: absolute;
+	z-index: 900;
+    bottom: 10px;
+    right: 80px;
+}
+
+.phone-design-box {
+	position: absolute;
+
+}
+
+.whiteSkin {
+	width: 44px;
+	height: 44px;
+	background: white;
+	border: 2px double grey;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.blackSkin {
+	width: 44px;
+	height: 44px;
+	background: black;
+	border: 2px double #808080;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.currentSkin {
+	/*border: 2px solid;*/
+}
+
+.price_phone_cr {
+	font-size: 18px;
+	display: block;
+	color: grey;
+	margin-top: 15px;
+}

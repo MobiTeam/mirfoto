@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная страница</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/header_style.css" rel="stylesheet">
+	<link href="css/footer_style.css" rel="stylesheet">
+	<link href="css/main_content.css" rel="stylesheet">
+	<link href="css/creator.css" rel="stylesheet">
+</head>
+
+
+<body>
+	
+	<div class="inform_line">
+		<div class="inform_line_text">
+			<a class="person_cabinet" rel="#"><span>Личный кабинет</span></a>
+			
+			<ul class="inform_line_menu">
+				<li><a href="#">Акции</a></li>
+				<li class="separator"></li>
+				<li><a href="#">Услуги</a></li>
+				<li class="separator"></li>
+				<li><a href="#">Оплата и доставка</a></li>
+				<li class="separator"></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>	
+
+			<div class="phone">
+				+7 999 567-34-10				
+			</div>
+	  	  	  	  	
+		</div>
+	</div>
+
+	
+	<div class="container" style="margin-top:100px">
+		<div class="row">
+			<div class="phone-design-box col-xs-6">
+				<button type="file" class="btn btn-warning btn-load-image">
+					<i class="glyphicon glyphicon-arrow-down"></i>
+					Загрузить изображение
+				</button>
+				<canvas id="map_layout" height="500" width="500"></canvas>					
+			</div>
+			<div class="col-xs-6">
+				<h4 class="phone_title_cr">Чехол для <span class="phone_model_text"></span></h4>
+				<h3 class="constr_h3">Выберите модель телефона:</h3>
+				<select class="phoneSelector selectpicker" name="" id="" onchange="openSelectedPhoneModel(this)">
+					<option value="img/iphone_6_6s_white.png" selected="">Iphone 6</option>
+					<option value="img/iphone_5_5s_black.png">Iphone 5/5s</option>
+					<option value="img/iphone_4_4s_black.png">Iphone 4/4s</option>
+					<option value="img/s4_mini.png">S4 mini</option>
+					<option value="img/s3.png">S3</option>
+					<option value="img/sony_xperia_m2.png">Sony Xperia M2</option>
+					<option value="img/sony_galaxy_s3.png">Sony Galaxy S3</option>
+				</select>
+				<br>
+				<h3 class="constr_h3">Цвет:</h3>
+				<input class="whiteSkin" type="button" value="" onclick="changeColorPhone(0)" />
+				<input class="blackSkin" type="button" value="" onclick="changeColorPhone(1)"/>
+				<span class="price_phone_cr">500 Руб.</span>
+				<br>
+				<button class="btn btn-success">
+				<i class="glyphicon glyphicon-shopping-cart"></i>
+				Положить в корзину
+				</button>
+			</div>
+
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+
+<div id="footer">
+	<div class="footer_inner">
+		<div class="line">
+			<div class="line_inner">
+				<ul class="bottom_main_menu">
+					<li><a href="/">На главную</a></li>
+					<li><a href="/company/">Компания</a></li>
+					<li><a href="/info/">Информация</a></li>
+					<li><a href="/help/">Помощь</a></li>
+				</ul>
+				<div class="phone pull-right footer_phone">
+					+7 999 567-34-10				
+				</div>
+			</div>
+		</div>
+	
+		<div class="sub-footer">
+			
+			<div class="copyright">
+				2016 © Мир-Фото
+				<div class="grey">Все права защищены</div>
+				Мы в соц. сети <img src="img/vk.png" />
+			</div>
+
+			<ul class="submenu">
+				<li class="menu_item"><a href="#">О компании</a></li>
+				<li class="menu_item"><a href="#">Новости</a></li>
+				<li class="menu_item"><a href="#">Сотрудники</a></li>
+				<li class="menu_item"><a href="#">Вакансии</a></li>
+				<li class="menu_item"><a href="#">Магазины</a></li>
+			</ul>
+
+			<ul class="submenu">
+				<li class="menu_item"><a href="#">Помощь</a></li>
+				<li class="menu_item"><a href="#">Условия оплаты</a></li>
+				<li class="menu_item"><a href="#">Условия доставки</a></li>
+				<li class="menu_item"><a href="#">Гарантия на товар</a></li>
+			</ul>
+
+			<ul class="submenu">
+				<li class="menu_item"><a href="#">Статьи</a></li>
+				<li class="menu_item"><a href="#">Вопрос-ответ</a></li>
+				<li class="menu_item"><a href="#">Производители</a></li>
+			</ul>
+			
+		</div>
+		
+
+	</div>
+</div>
+
+	
+			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fabric.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/constr.js"></script>
+</body>
+
+</html>
