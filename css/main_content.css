@@ -1,23 +1,17 @@
 .usl_name_thumb{
 
     color:grey;
-    font-family: "Electra Font", Arial, Helvetica, sans-serif;
-
 }
+
 .view {
-   /* width: 310px;
-    height: 320px;
-    margin: 10px;*/
     float: left;
-    
-   /* border: 10px solid #fff;*/
     overflow: hidden;
     position: relative;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: pointer;
-    /*background: #fff url(../images/bgimg.jpg) no-repeat center center*/
 }
+
 .view .mask, .view .content {
     width: 300px;
     height: 320px;
@@ -26,6 +20,7 @@
     top: 0;
     left: 0
 }
+
 .view img {
     display: block;
     position: relative
@@ -40,8 +35,8 @@
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0
 }
+
 .view p {
-    font-family: Georgia, serif;
     font-style: italic;
     font-size: 12px;
     position: relative;
@@ -49,6 +44,7 @@
     padding: 10px 20px 20px;
     text-align: center
 }
+
 .view a.info {
     display: inline-block;
     text-decoration: none;
@@ -58,6 +54,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 1px #000
 }
+
 .view a.info:hover {
     box-shadow: 0 0 5px #000
 }
@@ -65,10 +62,12 @@
 .view img { 
 	transition: all 0.4s ease-in-out 0.5s; 
 }
+
 .view .mask{ 
 	background-color: rgba(102, 102, 102, 0.8);
 	opacity:0;
 	transition: all 0.3s ease-in 0.4s;
+    border-radius: 4px;
 }
 .view h2{
 	opacity:0;
@@ -118,4 +117,24 @@
 
 .catalogs {
     padding: 5px 12px;
+}
+
+.title_catalogue {
+    font-size: 28px;
+    font-family: 'Roboto Light';
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
+}
+
+.content {
+    margin-bottom: 40px;
+    font-family: 'Roboto Regular', 'Calibri';
+}
+
+.mask a {
+    text-decoration: none;
 }
