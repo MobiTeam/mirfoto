@@ -9,13 +9,11 @@
 }
 .contacts_adress{
 
-	list-style-type: none;
+	list-style-type: none!important;
 }
 
 .contacts_feedback{
 	margin: 10px auto;
-	background-color: #FAFAFA;
-
 }
 .contacts_name_feedback{
 

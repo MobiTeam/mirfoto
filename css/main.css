@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/*font-family: 'Roboto Regular', 'Calibri';*/
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #3aa51a;
+}
+
+.important_text {
+	font-size: 18px!important;
+	font-family: 'Roboto Regular';
+	color: brown;
+}
+
+.no-paddings {
+	padding: 0px!important;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/century_gothic.ttf');
+} 
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/RobotoLight.ttf');
+} 
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/RobotoRegular.ttf');
+} 
+
+.thumbnail {
+	padding: 0px!important;
+}
+
+.breadcrumb {
+	background: none;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.breadcrumb li a {
+	color: grey;
+	font-family: 'Roboto Regular', 'Calibri';
+	text-decoration: none;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    color: #585858;
+    font-size: 12px;
+}
