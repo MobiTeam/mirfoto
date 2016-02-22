@@ -1,0 +1,230 @@
+.shop_cart_head{
+
+	margin-left: 10px;
+
+}
+
+.inform_block_shop_cart{
+
+	border-bottom:1px dashed #8F9189;
+}
+
+.btn_shop_cart{
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.shop_cart_all{
+	/*border:1px dashed black;*/
+	float:right;
+
+}
+
+.table-shop-cart{
+	 color:#5c5c5c;
+	 margin-top:7px;
+	 width:100%;
+}
+
+.table-shop-cart .table-shop-cart-tr-head {
+ color:#5c5c5c;
+ font-size:14px;
+ font-weight:500;
+}
+.table-shop-cart .table-shop-cart-tr-head td {
+ padding:10px;
+ border-top:1px solid #c1c1c1;
+ border-bottom:1px solid #c1c1c1;
+}
+
+.table-shop-cart .table-shop-cart-tr-body td {
+ border-bottom:1px solid #c1c1c1;
+ padding:18px 10px 14px;
+ vertical-align:top;
+}
+
+.table-shop-cart .td-img-cover img {
+ height:120px;width:120px;
+}
+.table-shop-cart .td-name-cover {
+ font-size:18px;
+ font-weight:500;
+ width:280px;
+}
+
+.table-shop-cart .td-name-cover span {
+ font-size:14px;
+ font-weight:300;
+ display:block;
+ padding-top:8px;
+ padding-top: 0;
+    text-align: left;
+}
+
+.table-shop-cart .tr-head td:nth-child(1) {
+	width: 120px;
+}
+.table-shop-cart .tr-head td:nth-child(2) {
+	width: 390px;
+}
+.table-shop-cart .tr-head td:nth-child(3) {
+	width: 195px;
+}
+.table-shop-cart .tr-head td:nth-child(4) {
+	width: 110px;
+}
+.table-shop-cart .tr-head td:nth-child(5) {
+	width: 190px;
+}
+
+.table-shop-cart .tr-colum td.td-amount-cover{
+	vertical-align:top;
+}
+
+.table-shop-cart .td-amount-cover input{
+	vertical-align: top;
+	#margin: 38px 10px 0;
+}
+
+ .table-shop-cart .td-amount-cover span{
+	margin-top: 8px;
+}
+
+.table-shop-cart .td-del-cover span{
+	margin-top: 4px;
+}
+
+.table-shop-cart .td-price-cover span{
+	margin-left: -7px;
+}
+
+.table-shop-cart .td-amount-cover span {
+ background-image:url(../images/ico-amount-cover.png);
+ cursor:pointer;
+ display:inline-block;
+ height:14px;width:14px;
+}
+.table-shop-cart .td-amount-cover .amount-plus {
+ background-position:0 -14px;
+}
+.table-shop-cart .td-amount-cover span:hover {
+ opacity:0.7;
+}
+.table-shop-cart .td-amount-cover input {
+ border:1px solid #c1c1c1;
+ display:inline-block;
+ height:27px;width:36px;
+ margin:0 10px;
+ outline:none;
+ text-align:center;
+}
+.table-shop-cart .td-price-cover,
+.table-shop-cart .td-total-cover {
+ font-size:18px;
+}
+.table-shop-cart .td-del-cover span, .table-orders .td-del-cover span {
+ cursor:pointer;
+ display:block;
+ height:17px;width:17px;
+ color: red;
+font-size: 20px;
+
+}
+.table-shop-cart .td-del-cover span:hover, .table-orders .td-del-cover span:hover {
+ background-position:0 -17px;
+}
+
+
+
+/*.table-cart .td-img-cover {
+ width:100px;
+}
+table-cart .td-img-cover img {
+ height:100px;width:100px;
+}
+.table-cart .td-name-cover {
+ font-size:18px;
+ font-weight:500;
+ width:280px;
+}
+.table-cart .td-name-cover span {
+ font-size:14px;
+ font-weight:300;
+ display:block;
+ padding-top:8px;
+ padding-top: 0;
+    text-align: left;
+}
+
+.table-cart .tr-head td:nth-child(1) {
+	width: 120px;
+}
+.table-cart .tr-head td:nth-child(2) {
+	width: 390px;
+}
+.table-cart .tr-head td:nth-child(3) {
+	width: 195px;
+}
+.table-cart .tr-head td:nth-child(4) {
+	width: 110px;
+}
+.table-cart .tr-head td:nth-child(5) {
+	width: 190px;
+}
+
+.window-container .table-cart .tr-colum td.td-amount-cover{
+	vertical-align:top;
+}
+
+.window-container .table-cart .td-amount-cover input{
+	vertical-align: top;
+	#margin: 38px 10px 0;
+}
+
+.window-container  .table-cart .td-amount-cover span{
+	margin-top: 8px;
+}
+
+.window-container .table-cart .td-del-cover span{
+	margin-top: 4px;
+}
+
+.window-container .table-cart .td-price-cover span{
+	margin-left: -7px;
+}
+
+
+.table-cart .td-amount-cover span {
+ background-image:url(../images/ico-amount-cover.png);
+ cursor:pointer;
+ display:inline-block;
+ height:14px;width:14px;
+}
+.table-cart .td-amount-cover .amount-plus {
+ background-position:0 -14px;
+}
+.table-cart .td-amount-cover span:hover {
+ opacity:0.7;
+}
+.table-cart .td-amount-cover input {
+ border:1px solid #c1c1c1;
+ display:inline-block;
+ height:27px;width:36px;
+ margin:0 10px;
+ outline:none;
+ text-align:center;
+}
+.table-cart .td-price-cover,
+.table-cart .td-total-cover {
+ font-size:18px;
+}
+.table-cart .td-del-cover span, .table-orders .td-del-cover span {
+ background-image:url(../images/ico-del.png);
+ cursor:pointer;
+ display:block;
+ height:17px;width:17px;
+}
+.table-cart .td-del-cover span:hover, .table-orders .td-del-cover span:hover {
+ background-position:0 -17px;
+}*/
