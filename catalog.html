@@ -2,91 +2,91 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Главная страница</title>
+	<title>Мир-Фото</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/header_style.css" rel="stylesheet">
-	<link href="css/footer_style.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
 	<link href="css/main_content.css" rel="stylesheet">
-	<link href="css/contacts.css" rel="stylesheet">
 	<link href="css/catalog.css" rel="stylesheet">
 </head>
-
-
 <body>
 	
-	<div class="inform_line">
-		<div class="inform_line_text">
-			<a class="person_cabinet" rel="#"><span>Личный кабинет</span></a>
-			
-			<ul class="inform_line_menu">
-				<li><a href="#">Акции</a></li>
-				<li class="separator"></li>
-				<li><a href="#">Услуги</a></li>
-				<li class="separator"></li>
-				<li><a href="#">Оплата и доставка</a></li>
-				<li class="separator"></li>
+	<div class="before-header">
+		<div class="container" style="max-width:1020px;">
+			<ul class="before-header-menu">
+				<li><a href="faq.html">Доставка</a></li>
+				<li><a href="faq.html">Оплата</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
-			</ul>	
-
-			<div class="phone">
-				+7 999 567-34-10				
-			</div>
-	  	  	  	  	
-		</div>
-	</div>
-
-	<div id="header">
-		<div class="wrapper_inner">
-			<table class="logotype_area" cellspacing="0" cellpadding="0" border="0" width="100%">
-				<tr>
-					<td class="logo_wrapp">
-						<div class="logo">
-								<a href="#"><img src="img/logotype_3.png"></a>
-						</div>
-					</td>
-
-					<td>
-						<form action="" class="search1" method="post">
-							<div class="btn-group">
-								<input class="search_field1 pull-left" type="text" name="q" placeholder="Поиск по сайту" autocomplete="off">
-								<button type="submit" class="btn btn-success find_butt">Поиск <i class="glyphicon glyphicon-search"></i></button>
-							</div>
-						</form>
-					</td>
-
-					<td>
-						<div class="shopping_box">
-							<div class="shopping_box_icon"><i class="glyphicon glyphicon-shopping-cart"></i></div>
-							<div class="shopping_box_info">
-								<a class="goods_text" href="">Товаров: <span class="goods_col">0</span></a><br>
-								<span class="price_text">на <span class="price_span">0</span> руб.</span></div>
-						</div>
-					</td>
-				</tr>
-
-								
-			</table>		
-		</div>
+			</ul>
+			<div class="social-network-info">
+				<p class="social-text pull-right">Мы в социальных сетях: <a href="http://vk.com/mirfotohm"><img class="vk_icon" src="img/vk_icon.png"></a></p>
+			</div>			
+		</div>		
 	</div>
 	
-	<div class="container" style="max-width: 1010px;">
-		<div class="navbar nav-green">
-			<ul class="nav navbar-nav">
-				<li class="menu_item_l1 first-li"><a href="#">Чехлы</a></li>
-				<li class="menu_item_l1"><a href="#">Подушки</a></li>
-				<li class="menu_item_l1"><a href="#">Фотографии</a></li>
-				<li class="menu_item_l1"><a href="#">Брелки</a></li>
-				<li class="menu_item_l1"><a href="#">Рамки</a></li>
-				<li class="menu_item_l1"><a href="#">Футболки</a></li>
-				<li class="menu_item_l1"><a href="#">Сувениры</a></li>
-				<li class="menu_item_l1 last-li"><a href="#">Прочее</a></li>			
+	<div class="header">
+		<table class="header_info_box container" style="min-width:1024px;">
+			<tr>
+				<td class="header_info_box_logo_td">
+					<a href="index.html">
+						<img src="img/logotype.png" />
+					</a>
+				</td>
+				<td class="header_info_box_phone_td">  
+					<img class="header_info_box_phone_icon" src="img/phone-large-icon.png" />
+					<p class="header_text">Работаем ежедневно с 9:00 до 20:00</p>
+					<p class="header_text important_text">8 945 399 16 368</p>
+					<p class="header_text">г.Ханты-Мансийск, ул. Светлая - 67</p>
+				</td>
+				<td class="header_shopping_box_td">
+					<img class="header_info_box_phone_icon" src="img/shopping-box.png" />
+					<div class="shopping_info_box">
+						<p class="shopping_par"><a href="#" class="shopping_box_link">Моя корзина</a></p>
+						<p class="shopping_info_par">В корзине нет товаров</p>
+						<p class="shopping_login_links"><!-- <span><a href="#">Войти</a></span> --> <span><a href="#">Оформить заказ</a></span></p>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div class="main-navigation container" style="min-width: 1024px;">
+			<ul>
+				<li class="ul-link">
+					<a href="#">Фото-товары</a>
+					<ul class="main-navigation-second-level"> 
+			          <li><a href="#">Альбомы</a></li>
+			          <li><a href="#">Рамки</a></li>
+			          <li><a href="#">USB / microSD / CD флешки</a></li>
+			          <li><a href="#">Аксессуары для iOS и Android</a></li>
+			          <li><a href="#">Канцтовары</a></li>
+			        </ul> 
+				</li>
+				<li class="ul-link">
+					<a class="with-separator" href="#">Печать на чехлах</a>
+					<ul class="main-navigation-second-level"> 
+			          <li><a href="#">Iphone 4/4s</a></li>
+			          <li><a href="#">Iphone 5/5s</a></li>
+			          <li><a href="#">Iphone 6/6s</a></li>
+			          <li><a href="#">Iphone 5c</a></li>
+			          <li><a href="#">Iphone 6+</a></li>
+			        </ul> 
+				</li>
+				<li class="ul-link"><a class="with-separator" href="#">Сувениры</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Футболки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Подушки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Прочие услуги</a></li>
 			</ul>
+		</div>
+
+		<div class="header_arrows">
+			
 		</div>
 	</div>
 
-
-<!-- Каталог товаров -->
+	
+	<div class="content">
+		<!-- Каталог товаров -->
  <div class="container" style="max-width: 1020px;" id="catalogs">
 
 	<ol class="breadcrumb">
@@ -99,12 +99,50 @@
         <div class="row">
 <!--Группа товаров  -->
             <div class="col-md-3">
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Фотографии</a>
+                <div class="list-group panel">
+                	<a href="#demo3" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu">Фотографии</a>
+                	<div class="collapse submenu" id="demo3">
+                		<a href="#" class="list-group-item">Альбомы</a>
+                		<a href="#" class="list-group-item">Подушки</a>
+                		<a href="#" class="list-group-item">Рамки</a>
+                		<a href="#" class="list-group-item">Прочее</a>
+                	</div>
                     <a href="#" class="list-group-item">Чехлы</a>
+                    <a href="#" class="list-group-item">Сувениры</a>
                     <a href="#" class="list-group-item">Подушки</a>
+                    <a href="#" class="list-group-item">Футболки</a>
                 </div>
             </div>
+
+
+
+<!-- <div id="MainMenu">
+  <div class="list-group panel">
+    <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+    <div class="collapse" id="demo3">
+      <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+      <div class="collapse list-group-submenu" id="SubMenu1">
+        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+        <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+        <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+          <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+        </div>
+        <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+      </div>
+      <a href="javascript:;" class="list-group-item">Subitem 2</a>
+      <a href="javascript:;" class="list-group-item">Subitem 3</a>
+    </div>
+    <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+    <div class="collapse" id="demo4">
+      <a href="" class="list-group-item">Subitem 1</a>
+      <a href="" class="list-group-item">Subitem 2</a>
+      <a href="" class="list-group-item">Subitem 3</a>
+    </div>
+  </div>
+</div> -->
+
 <!-- /Группа товаров  -->
             <div class="col-md-9">
 
@@ -114,10 +152,10 @@
                 <!-- Товар 1 -->
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail thumbnail_catalogs hover">
-                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""> </a>
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
                             <div class="caption catalog_caption">
                                 <h4 class="pull-right">50 ₽</h4>
-                                <h4 ><a href="#">Фоторамка А</a></h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
                        				<hr>
                             </div>
                             <div class="ratings ">
@@ -136,14 +174,13 @@
                     </div>	
 					<!-- /Товар 1 -->
 
-
-                <!-- Товар 1 -->
+					<!-- Товар 1 -->
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail thumbnail_catalogs hover">
-                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""> </a>
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
                             <div class="caption catalog_caption">
                                 <h4 class="pull-right">50 ₽</h4>
-                                <h4 ><a href="#">Фоторамка А</a></h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
                        				<hr>
                             </div>
                             <div class="ratings ">
@@ -162,13 +199,13 @@
                     </div>	
 					<!-- /Товар 1 -->
 
-                <!-- Товар 1 -->
+					<!-- Товар 1 -->
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail thumbnail_catalogs hover">
-                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""> </a>
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
                             <div class="caption catalog_caption">
                                 <h4 class="pull-right">50 ₽</h4>
-                                <h4 ><a href="#">Фоторамка А</a></h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
                        				<hr>
                             </div>
                             <div class="ratings ">
@@ -187,13 +224,13 @@
                     </div>	
 					<!-- /Товар 1 -->
 
-                <!-- Товар 1 -->
+					<!-- Товар 1 -->
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail thumbnail_catalogs hover">
-                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""> </a>
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
                             <div class="caption catalog_caption">
                                 <h4 class="pull-right">50 ₽</h4>
-                                <h4 ><a href="#">Фоторамка А</a></h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
                        				<hr>
                             </div>
                             <div class="ratings ">
@@ -210,7 +247,133 @@
                        
                       </div>
                     </div>	
-					<!-- /Товар 1 -->										
+					<!-- /Товар 1 -->
+
+					<!-- Товар 1 -->
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail thumbnail_catalogs hover">
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
+                            <div class="caption catalog_caption">
+                                <h4 class="pull-right">50 ₽</h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
+                       				<hr>
+                            </div>
+                            <div class="ratings ">
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <button type="button" class="btn btn-success btn-sm btn-catalogs">Купить</button>
+                                </p>
+                            </div>
+
+                       
+                      </div>
+                    </div>	
+					<!-- /Товар 1 -->
+
+					<!-- Товар 1 -->
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail thumbnail_catalogs hover">
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
+                            <div class="caption catalog_caption">
+                                <h4 class="pull-right">50 ₽</h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
+                       				<hr>
+                            </div>
+                            <div class="ratings ">
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <button type="button" class="btn btn-success btn-sm btn-catalogs">Купить</button>
+                                </p>
+                            </div>
+
+                       
+                      </div>
+                    </div>	
+					<!-- /Товар 1 -->
+
+					<!-- Товар 1 -->
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail thumbnail_catalogs hover">
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
+                            <div class="caption catalog_caption">
+                                <h4 class="pull-right">50 ₽</h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
+                       				<hr>
+                            </div>
+                            <div class="ratings ">
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <button type="button" class="btn btn-success btn-sm btn-catalogs">Купить</button>
+                                </p>
+                            </div>
+
+                       
+                      </div>
+                    </div>	
+					<!-- /Товар 1 -->
+
+					<!-- Товар 1 -->
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail thumbnail_catalogs hover">
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
+                            <div class="caption catalog_caption">
+                                <h4 class="pull-right">50 ₽</h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
+                       				<hr>
+                            </div>
+                            <div class="ratings ">
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <button type="button" class="btn btn-success btn-sm btn-catalogs">Купить</button>
+                                </p>
+                            </div>
+
+                       
+                      </div>
+                    </div>	
+					<!-- /Товар 1 -->
+
+					<!-- Товар 1 -->
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail thumbnail_catalogs hover">
+                            <a href="" class=""><img src="http://placehold.it/320x250" alt=""></a>
+                            <div class="caption catalog_caption">
+                                <h4 class="pull-right">50 ₽</h4>
+                                <h4><a class="no-text-decoration" href="#">Фоторамка А</a></h4>
+                       				<hr>
+                            </div>
+                            <div class="ratings ">
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <button type="button" class="btn btn-success btn-sm btn-catalogs">Купить</button>
+                                </p>
+                            </div>
+
+                       
+                      </div>
+                    </div>	
+					<!-- /Товар 1 -->
+
 
                 </div>
 				<!-- /ТОВАРЫ -->
@@ -222,66 +385,43 @@
 
 
 <!-- /Каталог товаров -->
-
-
-		<br>
-		<br>
-
-<div id="footer">
-	<div class="footer_inner">
-		<div class="line">
-			<div class="line_inner">
-				<ul class="bottom_main_menu">
-					<li><a href="/">На главную</a></li>
-					<li><a href="/company/">Компания</a></li>
-					<li><a href="/info/">Информация</a></li>
-					<li><a href="/help/">Помощь</a></li>
-				</ul>
-				<div class="phone pull-right footer_phone">
-					+7 999 567-34-10				
-				</div>
-			</div>
-		</div>
+		<div style="clear:both;"></div>
+	</div> 
 	
-		<div class="sub-footer">
-			
-			<div class="copyright">
-				2016 © Мир-Фото
-				<div class="grey">Все права защищены</div>
-				Мы в соц. сети <img src="img/vk.png" />
-			</div>
 
-			<ul class="submenu">
-				<li class="menu_item"><a href="#">О компании</a></li>
-				<li class="menu_item"><a href="#">Новости</a></li>
-				<li class="menu_item"><a href="#">Сотрудники</a></li>
-				<li class="menu_item"><a href="#">Вакансии</a></li>
-				<li class="menu_item"><a href="#">Магазины</a></li>
+	<div class="footer">
+		<div class="footer-navigation">
+			<ul class="container">
+				<li><a class="" href="#">О нас</a></li>
+				<li><a class="with-separator" href="contacts.html">Мы на карте</a></li>
+				<li><a class="with-separator" href="faq.html">Доставка</a></li>
+				<li><a class="with-separator" href="faq.html">Оплата</a></li>
 			</ul>
-
-			<ul class="submenu">
-				<li class="menu_item"><a href="#">Помощь</a></li>
-				<li class="menu_item"><a href="#">Условия оплаты</a></li>
-				<li class="menu_item"><a href="#">Условия доставки</a></li>
-				<li class="menu_item"><a href="#">Гарантия на товар</a></li>
-			</ul>
-
-			<ul class="submenu">
-				<li class="menu_item"><a href="#">Статьи</a></li>
-				<li class="menu_item"><a href="#">Вопрос-ответ</a></li>
-				<li class="menu_item"><a href="#">Производители</a></li>
-			</ul>
-			
 		</div>
+		<table class="container footer-table" style="max-width:1020px;">
+			<tr>
+
+				<td class="phone-td">
+					<span class="phone-num">8 945 399 16 368</span><br>
+					Работаем с 9:00 - 20:00 Пн-Вск
+				</td>
+				<td style="padding: 23px 19px 0px;">
+					 Email: ouremail@mirfoto.ru<br>
+					 г.Ханты-Мансийск, ул. Светлая - 67
+				</td>
+			</tr>
+			<tr>
+				<td class="no-paddings" colspan="2">
+					<div class="copyright">
+						"Мир-Фото" - 2016 г.
+					</div>
+				</td>
+			</tr>
+		</table>
 		
-
 	</div>
-</div>
-
 	
-			
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>

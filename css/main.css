@@ -61,3 +61,7 @@ a:hover {
     color: #585858;
     font-size: 12px;
 }
+
+.no-text-decoration {
+	text-decoration: none!important;
+}
