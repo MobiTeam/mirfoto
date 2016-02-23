@@ -65,3 +65,9 @@ a:hover {
 .no-text-decoration {
 	text-decoration: none!important;
 }
+
+.carousel-indicators li {
+	border: 1px solid grey!important;
+	padding: 5px;
+	background: #F5F6CE;
+}

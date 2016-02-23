@@ -133,6 +133,7 @@
 .content {
     margin-bottom: 40px;
     font-family: 'Roboto Regular', 'Calibri';
+	min-height: 600px;
 }
 
 .mask a {

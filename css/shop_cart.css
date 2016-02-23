@@ -4,9 +4,13 @@
 
 }
 
+.shop_cart {
+	margin-bottom: 80px;
+}
+
 .inform_block_shop_cart{
 
-	border-bottom:1px dashed #8F9189;
+	/* border-bottom:1px dashed #8F9189; */
 }
 
 .btn_shop_cart{
