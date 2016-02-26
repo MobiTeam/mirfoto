@@ -13,6 +13,8 @@
 	<link href="css/main_content.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/constr.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
 </head>
 <body>
 	
@@ -203,8 +205,13 @@
 						    <label for="setTextColor">Цвет текста:</label>	
 						    <div class="color color-text setTextColor" style="height: 20px; width: 20px; display: inline-block; 
     vertical-align: middle; margin: 0px 2px; background: black;"></div>
-						   
-					    	
+    						<br>
+    						<label for="strokeCheckbox">Обводка:</label>	
+						    <input type="checkbox" class="strokeCheckbox" onchange="setStroke();" />
+						    <label for="strokeColorCheckbox">Цвет обводки:</label>	
+						    <div class="color color-stroke strokeColor" style="height: 20px; width: 20px; display: inline-block; 
+    vertical-align: middle; margin: 0px 2px; background: black;"></div>
+					    	<div id="slider"></div>
 						</div>						
 					</div>
 
@@ -260,13 +267,14 @@
 		</table>
 		
 	</div>
+		<script src="js/jquery-2.2.0.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/fabric.js"></script>
-		<script src="js/jquery-2.2.0.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script src="js/bootstrap-select.min.js"></script>
 	    <script src="js/jqColorPicker.min.js"></script>
 	    <script src="js/ajaxFile.js"></script>
+	    <script src="js/jquery-ui.min.js"></script>
 	
 	
 </body>

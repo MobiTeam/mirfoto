@@ -182,7 +182,7 @@
 	border: none;
 }
 
-.setBgColorCh, .setFonCh, .setTextColorCh {
+.setBgColorCh, .setFonCh, .setTextColorCh, .strokeCheckbox, .strokeColorCheckbox {
 	vertical-align: text-top;
 }
 
@@ -213,4 +213,8 @@
     cursor: inherit;
     display: block;
     
+}
+
+#slider {
+	margin: 0px 10px;
 }

@@ -19,14 +19,38 @@ window.onload = function(){
 	
 	   changeColorPhone(0);	 
 	   	  	  
-	   $('.color-bg, .color-text').colorPicker({
+	   $('.color-bg, .color-text, .strokeColor').colorPicker({
 	   		opacity: false,
 	   		renderCallback: function(){
 	   			setBgColor();
 	   			setTextColor();
+	   			if($('.strokeCheckbox').prop('checked')) setStrokeColor();
 	   		}
 	    });
 	   
+      
+	    $( "#slider" ).slider({
+	    	 value: 0,
+		     min: 0,
+		     max: 600,
+		     step: 1,
+		     slide: function( event, ui ) {
+				setStroke();
+	    	 }
+		});
+	  
+
+	  // $( "#slider-range-min" ).slider({
+	  //     range: "min",
+	  //     value: 2,
+	  //     min: 1,
+	  //     max: 300,
+	  //     // slide: function( event, ui ) {
+	  //     //   $( "#amount" ).val( "$" + ui.value );
+	  //     // }
+	  //   });
+
+
 }
 
 ////////////////////////////////////////////
@@ -131,9 +155,9 @@ function deleteText(){
 function addTextOnCanvas(){
 
 	deleteText();
-
+	var fontFam = $('.fontSelector option:selected').text();
 	var textOnPhone = new fabric.Text($('.entered-text').val() || "MIR-FOTO", {
-			fontFamily: 'Arial Black',
+			fontFamily: fontFam,
 			lineHeight: 0.8,
 			fill: getTextColor(),
 			hasRotatingPoint: true,
@@ -441,6 +465,37 @@ function scalling(val){
 	if(bgImg){
 		bgImg.scale(bgImg.scaleX + val);
 		canvas.renderAll();
+	}
+}
+
+
+//////////////////////////////////////////////////////
+////  Функция добавления обводки [25.02.2016]       //
+//////////////////////////////////////////////////////
+
+function setStroke(){
+	var $el = canvas.getObjects(),
+		strokeVal = $('.strokeCheckbox').prop('checked') ? parseFloat(($('#slider').slider("option", "value") / 100.0).toFixed(2)) : 0;
+	
+	for(var i = 0; i < $el.length; i++){
+		if($el[i]['type'] == "text"){
+			$el[i].setStrokeWidth(strokeVal);
+			$el[i].setStroke($('.color-stroke').css('background-color'));
+		}
+	}
+	canvas.renderAll();
+}
+
+////////////////////////////////////////////////////
+////  Изменение обводки текста [25.02.2016]       //
+////////////////////////////////////////////////////
+
+function setStrokeColor(){
+	var $el = canvas.getObjects();
+	for(var i = 0; i < $el.length; i++){
+		if($el[i]['type'] == "text"){
+			$el[i].setStroke($('.color-stroke').css('background-color'));
+		}
 	}
 }
 
