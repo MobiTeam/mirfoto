@@ -82,7 +82,7 @@
 	height: 45px;
 }
 
-.price_phone_cr {
+.price_phone_cr, .price_pill_cr  {
 	font-size: 18px;
 	display: block;
 	color: grey;
@@ -133,7 +133,7 @@
 
 }
 
-.FonBox {
+.FonBox, .FonBoxPills {
 	width: 315px;
 	overflow-y: scroll;
 	height: 200px;
@@ -216,5 +216,5 @@
 }
 
 #slider {
-	margin: 0px 10px;
+	margin: 10px 10px;
 }

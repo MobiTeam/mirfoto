@@ -29,6 +29,16 @@ a:hover {
 } 
 
 @font-face {
+    font-family: 'Elzevir';
+    src: url('../fonts/Elzevir.ttf');
+} 
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/AMSTERDA.TTF');
+} 
+
+@font-face {
     font-family: 'Roboto Light';
     src: url('../fonts/RobotoLight.ttf');
 } 
@@ -70,4 +80,9 @@ a:hover {
 	border: 1px solid grey!important;
 	padding: 5px;
 	background: #F5F6CE;
+}
+
+.no-resize {
+	resize: none;
+	width: 270px!important;
 }
