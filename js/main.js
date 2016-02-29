@@ -12,10 +12,13 @@ window.onload = function(){
 		    fontFamily: 'BigNoodLetitling'
 	    });
 	
-		 var f3 = new fabric.Text('text', {
-			    fontFamily: 'Massacre'
-		    });
+		var f3 = new fabric.Text('text', {
+		    fontFamily: 'Massacre'
+		});
 	
+		var f4 = new fabric.Text('text', {
+		    fontFamily: 'Elzevir'
+		});
 	
 	   changeColorPhone(0);	 
 	   	  	  
@@ -158,7 +161,7 @@ function deleteText(){
 
 
 //////////////////////////////////////////////
-/// Добавить текст на canvas [20.02.2016]  ///
+/// Добавить текст на canvas [29.02.2016]  ///
 //////////////////////////////////////////////
 
 function addTextOnCanvas(){
@@ -171,10 +174,10 @@ function addTextOnCanvas(){
 			fill: getTextColor(),
 			hasRotatingPoint: true,
 			fontSize: 60,
+			stroke: getStrokeColor(),
+			strokeWidth: getStrokeWidth(),
 			left: 270, 
 			top: 260,
-			// scaleY: 2.8,
-			// scaleX: 0.9,
 			originX: 'center',
 			originY: 'center',
 			borderColor: 'red',
@@ -187,6 +190,27 @@ function addTextOnCanvas(){
 	
 }
 
+//////////////////////////////////////////// 
+/// Получить цвет обводки  [29.02.2016]  ///
+//////////////////////////////////////////// 
+
+function getStrokeColor(){
+	if($('.strokeCheckbox').prop('checked')){
+		return $('.strokeColor').css('background-color');
+	}
+	return "";
+}
+
+////////////////////////////////////////////// 
+/// Получить ширину обводки  [29.02.2016]  ///
+////////////////////////////////////////////// 
+
+function getStrokeWidth(){
+	if($('.strokeCheckbox').prop('checked')){
+		return parseFloat(($('#slider').slider("option", "value") / 100.0).toFixed(2))
+	}
+	return 0;
+}
 
 ///////////////////////////////////// 
 /// Изменить шрифт  [24.02.2016]  ///
@@ -404,12 +428,14 @@ function FonToggle(){
 
 
 //////////////////////////////////////////////////////
-////  Функция добавления нового фона [24.02.2016]   //
+////  Функция добавления нового фона [29.02.2016]   //
 //////////////////////////////////////////////////////
 
 function setFon(imgSrc){
 	if(imgSrc){
 		fabric.Image.fromURL(imgSrc, function(oImg) {
+		  oImg.set('scaleY', (canvas.height - 100) / oImg.height);	
+		  oImg.set('scaleX', (canvas.height - 100) / oImg.height);
 		  deleteImages();
 		  canvas.add(oImg);
 		  canvas.sendBackwards(oImg);

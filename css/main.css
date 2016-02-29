@@ -86,3 +86,7 @@ a:hover {
 	resize: none;
 	width: 270px!important;
 }
+
+.cp-color-picker {
+	z-index: 999999;
+}
