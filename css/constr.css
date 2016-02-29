@@ -82,7 +82,7 @@
 	height: 45px;
 }
 
-.price_phone_cr {
+.price_phone_cr, .price_pill_cr  {
 	font-size: 18px;
 	display: block;
 	color: grey;
@@ -133,7 +133,7 @@
 
 }
 
-.FonBox {
+.FonBox, .FonBoxPills {
 	width: 315px;
 	overflow-y: scroll;
 	height: 200px;
@@ -182,7 +182,7 @@
 	border: none;
 }
 
-.setBgColorCh, .setFonCh, .setTextColorCh {
+.setBgColorCh, .setFonCh, .setTextColorCh, .strokeCheckbox, .strokeColorCheckbox {
 	vertical-align: text-top;
 }
 
@@ -213,4 +213,8 @@
     cursor: inherit;
     display: block;
     
+}
+
+#slider {
+	margin: 10px 10px;
 }
