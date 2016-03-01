@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6bcb9314275586f5a5a566a4b89f162f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '195f84e8fbbdfc5e9ac506ce9f4986a1',
+  'native_key' => 'phpthumbof.postfix_property_hash',
+  'object' => '{"key":"phpthumbof.postfix_property_hash","value":true,"xtype":"combo-boolean","namespace":"phpthumbof","area":"general","editedon":null}',
+);

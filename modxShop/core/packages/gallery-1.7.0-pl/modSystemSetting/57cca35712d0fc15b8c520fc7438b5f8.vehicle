@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fa984ba956f341336e34451278bbe29d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '57cca35712d0fc15b8c520fc7438b5f8',
+  'native_key' => 'gallery.backend_thumb_width',
+  'object' => '{"key":"gallery.backend_thumb_width","value":"100","xtype":"textfield","namespace":"gallery","area":"backend","editedon":null}',
+);

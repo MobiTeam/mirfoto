@@ -1,0 +1,220 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#map_layout {
+	border: 1px solid grey;
+}
+
+.wrapper {
+	min-width: 1024px;
+	margin: 20px auto;
+}
+
+#map_layout {
+	/*background: url('../img/iphone_4_4s_black.png');*/
+}
+
+.constr_h3 {
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+.phone_title_cr {
+	color: grey;
+}
+
+/*.btn-load-image {
+	position: absolute;
+	z-index: 900;
+    bottom: 10px;
+    right: 80px;
+}*/
+
+.phone-design-box {
+	position: absolute;
+
+}
+
+.color {
+	width: 44px;
+	height: 44px;
+	border: 2px double grey;
+}
+
+.whiteSkin {
+	width: 44px;
+	height: 44px;
+	background: white;
+	border: 2px double grey;
+	margin: 5px;
+}
+
+.blackSkin {
+	width: 44px;
+	height: 44px;
+	background: black;
+	border: 2px double #808080;
+	margin: 5px;
+}
+
+.transpentSkin {
+	width: 44px;
+	height: 44px;
+	background: url('../img/transparent-color.png');
+	border: 2px double #808080;
+	background-size: 100%;
+	margin: 5px;
+}
+
+.currentSkin {
+	/*border: 2px solid;*/
+}
+
+.currentColorSkin:focus, .blackSkin:focus, .whiteSkin:focus{
+	outline: none;
+}
+
+.currentColorSkin {
+	border: 4px solid orange;
+	width: 45px;
+	height: 45px;
+}
+
+.price_phone_cr, .price_pill_cr  {
+	font-size: 18px;
+	display: block;
+	color: grey;
+	margin-top: 15px;
+}
+
+.inclide_box {
+	padding: 0px;
+	min-width: 1024px;
+}
+
+.input-small {
+	width: 210px;
+    display: inline-block;
+    margin: 8px 6px;
+}
+
+@font-face {
+	font-family: 'BigNoodLetitling';
+	src: url('../fonts/bignoodletitling.ttf');
+	/*src: local('../fonts/bignoodletitling'), url('../fonts/bignoodletitling.woff') format('woff'), url('../fonts/bignoodletitling.ttf') format('truetype');*/
+}
+
+@font-face {
+	font-family: 'Massacre';
+	src: url('../fonts/Massacre.ttf');
+	/*src: local('../fonts/bignoodletitling'), url('../fonts/bignoodletitling.woff') format('woff'), url('../fonts/bignoodletitling.ttf') format('truetype');*/
+}
+
+@font-face {
+	font-family: 'DsNarrow';
+	src: url('../fonts/DsNarrow.ttf');
+	/*src: local('../fonts/bignoodletitling'), url('../fonts/bignoodletitling.woff') format('woff'), url('../fonts/bignoodletitling.ttf') format('truetype');*/
+}
+
+
+.bgColorBox, .TextColorBox, .FonBox {
+	display: none;
+}
+
+.fon-item img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid grey;
+	cursor: pointer;
+	float: left;
+	margin: 4px;
+
+}
+
+.FonBox, .FonBoxPills {
+	width: 315px;
+	overflow-y: scroll;
+	height: 200px;
+}
+
+.resize-buttons {
+	position: absolute;
+	z-index: 9999;
+	right: 0;
+	bottom: 20px;
+	width: 40px;
+	display: none;
+	border: none!important;
+    width: 40px!important;
+    margin-bottom: 30px!important;
+}
+
+.canvas-block {
+	max-width: 500px;	
+	margin-right: 50px;
+}
+
+.plus_button, .minus_button {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-bottom: 4px;
+}
+
+.plus_button:focus, .minus_button:focus {
+	outline: none;
+}
+
+.plus_button:active, .minus_button:active {
+	opacity: 0.85;
+}
+
+.plus_button {
+	background: url('../img/resize-icons.png');
+	border: none;
+}
+
+.minus_button {
+	background: url('../img/resize-icons.png');
+	background-position: 40px 40px;
+	border: none;
+}
+
+.setBgColorCh, .setFonCh, .setTextColorCh, .strokeCheckbox, .strokeColorCheckbox {
+	vertical-align: text-top;
+}
+
+.form-group {
+	margin-bottom: 15px;
+    border: 1px dashed rgba(116, 116, 116, 0.36);
+    padding: 5px;
+    margin: 5px;
+    width: 331px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    
+}
+
+#slider {
+	margin: 10px 10px;
+}

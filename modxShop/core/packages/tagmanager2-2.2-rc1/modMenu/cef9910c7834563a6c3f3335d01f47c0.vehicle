@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'tag_manager2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7747e817f9f3118beb4a3302d0b43a6a',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'cef9910c7834563a6c3f3335d01f47c0',
+  'native_key' => 'tag_manager2',
+  'object' => '{"text":"tag_manager2","parent":"components","action":"index","description":"tag_manager2_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"tag_manager2"}',
+);

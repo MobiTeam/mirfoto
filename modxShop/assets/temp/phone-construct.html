@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/constr.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/main_content.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/constr.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+</head>
+<body>
+	
+	<div class="before-header">
+		<div class="container" style="max-width:1020px;">
+			<ul class="before-header-menu">
+				<li><a href="faq.html">Доставка</a></li>
+				<li><a href="faq.html">Оплата</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<div class="social-network-info">
+				<p class="social-text pull-right">Мы в социальных сетях: <a href="http://vk.com/mirfotohm"><img class="vk_icon" src="img/vk_icon.png"></a></p>
+			</div>			
+		</div>		
+	</div>
+	
+	<div class="header">
+		<table class="header_info_box container" style="min-width:1024px;">
+			<tr>
+				<td class="header_info_box_logo_td">
+					<a href="index.html">
+						<img src="img/logotype.png" />
+					</a>
+				</td>
+				<td class="header_info_box_phone_td">  
+					<img class="header_info_box_phone_icon" src="img/phone-large-icon.png" />
+					<p class="header_text">Работаем ежедневно с 9:00 до 20:00</p>
+					<p class="header_text important_text">8 945 399 16 368</p>
+					<p class="header_text">г.Ханты-Мансийск, ул. Светлая - 67</p>
+				</td>
+				<td class="header_shopping_box_td">
+					<img class="header_info_box_phone_icon" src="img/shopping-box.png" />
+					<div class="shopping_info_box">
+						<p class="shopping_par"><a href="#" class="shopping_box_link">Моя корзина</a></p>
+						<p class="shopping_info_par">В корзине нет товаров</p>
+						<p class="shopping_login_links"><!-- <span><a href="#">Войти</a></span> --> <span><a href="#">Оформить заказ</a></span></p>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div class="main-navigation container" style="min-width: 1024px;">
+			<ul>
+				<li class="ul-link">
+					<a href="#">Фото-товары</a>
+					<ul class="main-navigation-second-level"> 
+			          <li><a href="#">Альбомы</a></li>
+			          <li><a href="#">Рамки</a></li>
+			          <li><a href="#">USB / microSD / CD флешки</a></li>
+			          <li><a href="#">Аксессуары для iOS и Android</a></li>
+			          <li><a href="#">Канцтовары</a></li>
+			        </ul> 
+				</li>
+				<li class="ul-link">
+					<a class="with-separator" href="phone-construct.html">Печать на чехлах</a>
+				</li>
+				<li class="ul-link"><a class="with-separator" href="#">Сувениры</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Футболки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Подушки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Прочие услуги</a></li>
+			</ul>
+		</div>
+
+		<div class="header_arrows">
+			
+		</div>
+	</div>
+
+
+	<div class="content" style="max-width:1024px; margin: 0 auto 80px; font-family: 'Roboto Light', 'Calibry';">
+
+		<ol class="breadcrumb">
+		  <li><a href="index.html">Главная</a></li>
+		  <li class="active">Печать на чехлах</li>
+		</ol>
+	
+		<h2>Генератор чехлов на телефон</h2>
+		<hr>
+
+		<div class="container inclide_box" style="margin-top:20px">
+				<div class="phone-design-box col-xs-6 canvas-block">
+					<div class="form-group resize-buttons">
+						<button class="plus_button" onclick="scalling(0.1)"></button>
+						<button class="minus_button" onclick="scalling(-0.1)"></button>						
+					</div>
+					<canvas id="map_layout" height="500" width="500"></canvas>		
+							
+				</div>
+				<div class="col-xs-6 pull-right">
+					<h4 class="phone_title_cr">Чехол для <span class="phone_model_text"></span> <span class="price_phone_cr"><span class="price_phone_value">500</span> Руб.</span></h4>
+					<h3 class="constr_h3">Выберите модель телефона:</h3>
+					<select class="phoneSelector selectpicker" name="" id="" onchange="changeColorPhone()">
+						<option value="img/iphone_6_" price="700" selected="">Iphone 6/6s</option>
+						<option value="img/iphone_6_plus_" price="700" selected="">Iphone 6 plus</option>
+						<option value="img/iphone_5_" price="600">Iphone 5/5s</option>
+						<option value="img/iphone_5c_" price="600">Iphone 5c</option>
+						<option value="img/iphone_4_" price="500">Iphone 4/4s</option>
+						<option value="img/ipad_mini_" price="500">Ipad Mini</option>
+						<option value="img/samsung_galaxy_note_" price="500">Samsung Galaxy Note</option>
+						<option value="img/samsung_galaxy_s5_" price="500">Samsung S5</option>
+						<option value="img/samsung_galaxy_s4_" price="500">Samsung S4</option>
+						<option value="img/samsung_galaxy_s3_" price="500">Samsung S3</option>
+					</select>
+					<br>
+					<h3 class="constr_h3">Цвет чехла:</h3>
+					<input class="whiteSkin" codecolor="0" type="button" value="" onclick="changeColorPhone(1)"/>
+					<input class="blackSkin" codecolor="1" type="button" value="" onclick="changeColorPhone(2)"/>
+					<input class="transpentSkin" codecolor="2" type="button" value="" onclick="changeColorPhone(3)"/>
+
+					<div class="form-group">
+						<label for="setBgColorCh">Добавить заливку:</label>
+					    <input type="checkbox" class="setBgColorCh" onchange="bgColorToggle();" />
+					    <div class="bgColorBox">
+						    <label for="setBgColor">Цвет заливки:</label>	
+						    <div class="color color-bg setBgColor" style="height: 20px; width: 20px; background: white; display:inline-block; vertical-align: middle; margin: 0px 2px;"></div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="setTextCh">Добавить фон:</label>
+						<input type="checkbox" class="setFonCh" onchange="FonToggle();" />
+					    <div class="FonBox">
+						    <div class="fon-item" onclick="setFon('bgs/fon-1.jpg');">
+						    	<img src="bgs/fon-1.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-2.jpg');">
+						    	<img src="bgs/fon-2.jpg"/>
+						    </div>	
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-3.jpg');">
+						    	<img src="bgs/fon-3.jpg"/>
+						    </div>	
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-1.jpg');">
+						    	<img src="bgs/fon-1.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-2.jpg');">
+						    	<img src="bgs/fon-2.jpg"/>
+						    </div>	
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-3.jpg');">
+						    	<img src="bgs/fon-3.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-1.jpg');">
+						    	<img src="bgs/fon-1.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-2.jpg');">
+						    	<img src="bgs/fon-2.jpg"/>
+						    </div>	
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-3.jpg');">
+						    	<img src="bgs/fon-3.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-1.jpg');">
+						    	<img src="bgs/fon-1.jpg"/>
+						    </div>
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-2.jpg');">
+						    	<img src="bgs/fon-2.jpg"/>
+						    </div>	
+
+						    <div class="fon-item" onclick="setFon('bgs/fon-3.jpg');">
+						    	<img src="bgs/fon-3.jpg"/>
+						    </div>
+
+						    <div style="clear:both;"></div>
+						</div>	
+					</div>
+
+					<div class="form-group">
+						<label for="setTextColorCh">Добавить текст:</label>
+					    <input type="checkbox" class="setTextColorCh" onchange="TextColorToggle();" />
+					    <div class="TextColorBox">
+					         <label for="inputText" style="margin-right:6px;">Шрифт:</label>
+					    	<select class="fontSelector selectpicker" name="inputText" id="inputText" onchange="changeFontText()">
+							  	<option selected>Arial Black</option>
+							  	<option>DsNarrow</option>
+							  	<option>BigNoodLetitling</option>
+							  	<option>Massacre</option>
+							  	<option>Elzevir</option>
+							</select>
+					         <label for="inputText" style="margin-top:5px;">Надпись:</label><br>
+					         <textarea onkeyup="addTextOnCanvas()" class="entered-text form-control input-small no-resize" id="inputText" placeholder="Введите текст"></textarea><br>
+						    <label for="setTextColor">Цвет текста:</label>	
+						    <div class="color color-text setTextColor" style="height: 20px; width: 20px; display: inline-block; 
+    vertical-align: middle; margin: 0px 2px; background: black;"></div>
+    						<br>
+    						<label for="strokeCheckbox">Обводка:</label>	
+						    <input type="checkbox" class="strokeCheckbox" onchange="setStroke();" />
+						    <label for="strokeColorCheckbox">Цвет обводки:</label>	
+						    <div class="color color-stroke strokeColor" style="height: 20px; width: 20px; display: inline-block; 
+    vertical-align: middle; margin: 0px 2px; background: black;"></div>
+					    	<div id="slider"></div>
+						</div>						
+					</div>
+
+					<div class="form-group">
+						<form action="php_constr/handler.php" method="post" id="my_form" enctype="multipart/form-data">
+						  <label for="you-image" style="margin-right:5px;">Своя картинка:</label>
+						  <span class="btn btn-default btn-file">
+						    Выбрать <input type="file" name="images" id="you-image" onchange="$('#my_form').submit()">
+							</span>
+						  <input type="submit" style="display:none;" id="submit" value="Отправить">
+						</form>
+					</div>
+					<button class="btn-lg btn-success" style="width:330px; margin-left: 5px; border: none;">
+					<i class="glyphicon glyphicon-shopping-cart"></i>
+						Положить в корзину
+					</button>				   
+									<!-- <input class="rotation-button" type="button" value="Повернуть" onclick="rotateCanvas()" /> -->
+				</div>
+	
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+
+<div class="footer">
+		<div class="footer-navigation">
+			<ul class="container">
+				<li><a class="" href="#">О нас</a></li>
+				<li><a class="with-separator" href="contacts.html">Мы на карте</a></li>
+				<li><a class="with-separator" href="faq.html">Доставка</a></li>
+				<li><a class="with-separator" href="faq.html">Оплата</a></li>
+			</ul>
+		</div>
+		<table class="container footer-table" style="max-width:1020px;">
+			<tr>
+
+				<td class="phone-td">
+					<span class="phone-num">8 945 399 16 368</span><br>
+					Работаем с 9:00 - 20:00 Пн-Вск
+				</td>
+				<td style="padding: 23px 19px 0px;">
+					 Email: ouremail@mirfoto.ru<br>
+					 г.Ханты-Мансийск, ул. Светлая - 67
+				</td>
+			</tr>
+			<tr>
+				<td class="no-paddings" colspan="2">
+					<div class="copyright">
+						"Мир-Фото" - 2016 г.
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+		<script src="js/jquery-2.2.0.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/fabric.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap-select.min.js"></script>
+	    <script src="js/jqColorPicker.min.js"></script>
+	    <script src="js/ajaxFile.js"></script>
+	    <script src="js/jquery-ui.min.js"></script>
+	
+	
+</body>
+</html>
+

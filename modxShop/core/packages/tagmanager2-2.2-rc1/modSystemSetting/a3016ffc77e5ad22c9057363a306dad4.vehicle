@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tag_manager2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b5c49fcc56fcc17a56983521fe2d3882',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a3016ffc77e5ad22c9057363a306dad4',
+  'native_key' => 'tag_mgr2.prod_templates',
+  'object' => '{"key":"tag_mgr2.prod_templates","value":"","xtype":"textfield","namespace":"tag_manager2","area":"module","editedon":null}',
+);

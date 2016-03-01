@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tag_manager2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c5d976cff89ec5fe4dfe8d6d323f4674',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e816fed511652a951b8ee6672709b2bf',
+  'native_key' => 'tag_mgr2.propertySetSnippet',
+  'object' => '{"key":"tag_mgr2.propertySetSnippet","value":"getPage","xtype":"textfield","namespace":"tag_manager2","area":"module","editedon":null}',
+);

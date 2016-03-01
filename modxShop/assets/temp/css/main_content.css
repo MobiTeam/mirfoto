@@ -1,0 +1,141 @@
+.usl_name_thumb{
+
+    color:grey;
+}
+
+.view {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: pointer;
+}
+
+.view .mask, .view .content {
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+
+.view p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 17px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view img { 
+	transition: all 0.4s ease-in-out 0.5s; 
+}
+
+.view .mask{ 
+	background-color: rgba(102, 102, 102, 0.8);
+	opacity:0;
+	transition: all 0.3s ease-in 0.4s;
+    border-radius: 4px;
+}
+.view h2{
+	opacity:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.view p { 
+	opacity:0;
+    transform: scale(10);
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.view a.info { 
+	opacity:0;
+    transform: translateY(100px);
+	transition: all 0.3s ease-in-out 0.1s;
+}
+
+.view:hover .mask {  
+	opacity:1; 
+	transition-delay: 0s;
+}																			 
+.view:hover img { 
+	transition-delay: 0s; 
+}
+.view:hover h2 { 
+	opacity: 1;
+    transform: scale(1);
+	transition-delay: 0.1s;
+}
+.view:hover p { 
+	opacity:1; 
+    transform: scale(1);
+	transition-delay: 0.2s;
+}
+.view:hover a.info { 
+	opacity:1;
+    transform: translateY(0px);
+	transition-delay: 0.3s;
+}
+
+.mask {
+    padding-top: 80px;
+}
+
+.catalogs {
+    padding: 5px 12px;
+}
+
+.title_catalogue {
+    font-size: 28px;
+    font-family: 'Roboto Light';
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
+}
+
+.content {
+    margin-bottom: 40px;
+    font-family: 'Roboto Regular', 'Calibri';
+	min-height: 600px;
+}
+
+.mask a {
+    text-decoration: none;
+}

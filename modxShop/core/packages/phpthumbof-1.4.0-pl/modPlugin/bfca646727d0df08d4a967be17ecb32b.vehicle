@@ -1,0 +1,54 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '47fcb1ce7e2a2a911244a088addc9a3a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnSiteRefresh","priority":0,"propertyset":0}',
+        'guid' => 'a50624ced27c6ff758296a9c2f04610d',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnSiteRefresh',
+        ),
+        'signature' => '002e7c1285cdeb60a838d8b84676933b',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0f257501b9d21e815c786e81aa13ff59',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'bfca646727d0df08d4a967be17ecb32b',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"phpThumbOfCacheManager","description":"Handles cache cleaning when clearing the Site Cache.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * phpThumbOf\\n *\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * phpThumbOf is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package phpthumbof\\n *\\/\\n\\/**\\n * Handles cache management for phpthumbof filter\\n *\\n * @var \\\\modX $modx\\n * @var array $scriptProperties\\n *\\n * @package phpthumbof\\n *\\/\\nif (empty($results)) $results = array();\\n\\nswitch ($modx->event->name) {\\n    case \'OnSiteRefresh\':\\n        if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class in plugin.\');\\n            return;\\n        }\\n        $assetsPath = $modx->getOption(\'phpthumbof.assets_path\',$scriptProperties,$modx->getOption(\'assets_path\').\'components\\/phpthumbof\\/\');\\n        $phpThumb = new modPhpThumb($modx);\\n        $cacheDir = $assetsPath.\'cache\\/\';\\n\\n        \\/* clear local cache *\\/\\n        if (!empty($cacheDir)) {\\n            \\/** @var DirectoryIterator $file *\\/\\n            foreach (new DirectoryIterator($cacheDir) as $file) {\\n                if (!$file->isFile()) continue;\\n                @unlink($file->getPathname());\\n            }\\n        }\\n\\n        \\/* if using amazon s3, clear our cache there *\\/\\n        $useS3 = $modx->getOption(\'phpthumbof.use_s3\',$scriptProperties,false);\\n        if ($useS3) {\\n            $modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\n            \\/** @var modAws $modaws *\\/\\n            $modaws = $modx->getService(\'modaws\',\'modAws\',$modelPath.\'aws\\/\',$scriptProperties);\\n            $s3path = $modx->getOption(\'phpthumbof.s3_path\',null,\'phpthumbof\\/\');\\n            \\n            $list = $modaws->getObjectList($s3path);\\n            if (!empty($list) && is_array($list)) {\\n                foreach ($list as $obj) {\\n                    if (empty($obj->Key)) continue;\\n\\n                    $results[] = $modaws->deleteObject($obj->Key);\\n                }\\n            }\\n        }\\n\\n        break;\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * phpThumbOf\\n *\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * phpThumbOf is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package phpthumbof\\n *\\/\\n\\/**\\n * Handles cache management for phpthumbof filter\\n *\\n * @var \\\\modX $modx\\n * @var array $scriptProperties\\n *\\n * @package phpthumbof\\n *\\/\\nif (empty($results)) $results = array();\\n\\nswitch ($modx->event->name) {\\n    case \'OnSiteRefresh\':\\n        if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n            $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class in plugin.\');\\n            return;\\n        }\\n        $assetsPath = $modx->getOption(\'phpthumbof.assets_path\',$scriptProperties,$modx->getOption(\'assets_path\').\'components\\/phpthumbof\\/\');\\n        $phpThumb = new modPhpThumb($modx);\\n        $cacheDir = $assetsPath.\'cache\\/\';\\n\\n        \\/* clear local cache *\\/\\n        if (!empty($cacheDir)) {\\n            \\/** @var DirectoryIterator $file *\\/\\n            foreach (new DirectoryIterator($cacheDir) as $file) {\\n                if (!$file->isFile()) continue;\\n                @unlink($file->getPathname());\\n            }\\n        }\\n\\n        \\/* if using amazon s3, clear our cache there *\\/\\n        $useS3 = $modx->getOption(\'phpthumbof.use_s3\',$scriptProperties,false);\\n        if ($useS3) {\\n            $modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\n            \\/** @var modAws $modaws *\\/\\n            $modaws = $modx->getService(\'modaws\',\'modAws\',$modelPath.\'aws\\/\',$scriptProperties);\\n            $s3path = $modx->getOption(\'phpthumbof.s3_path\',null,\'phpthumbof\\/\');\\n            \\n            $list = $modaws->getObjectList($s3path);\\n            if (!empty($list) && is_array($list)) {\\n                foreach ($list as $obj) {\\n                    if (empty($obj->Key)) continue;\\n\\n                    $results[] = $modaws->deleteObject($obj->Key);\\n                }\\n            }\\n        }\\n\\n        break;\\n}\\nreturn;"}',
+);

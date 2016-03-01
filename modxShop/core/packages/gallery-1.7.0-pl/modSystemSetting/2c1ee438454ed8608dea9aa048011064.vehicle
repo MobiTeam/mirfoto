@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd0c012c19119bf2624bd9b0b39a7bc3c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2c1ee438454ed8608dea9aa048011064',
+  'native_key' => 'xhtml_urls',
+  'object' => '{"key":"xhtml_urls","value":0,"xtype":"combo-boolean","namespace":"core","area":"furls","editedon":null}',
+);

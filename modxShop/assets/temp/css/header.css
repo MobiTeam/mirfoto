@@ -1,0 +1,199 @@
+.before-header {
+	height: 42px;
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.46);
+	border-bottom: solid 1px #d6d6d6;
+
+}
+
+.before-header-menu {
+	list-style-type: none;
+	font-size: 16px;
+	font-family: 'Roboto Light', 'Calibri';
+
+}
+
+.before-header-menu li {
+	float: left;
+	margin: 8px 12px;
+}
+
+.header {
+	background: #f4f4f8 url(../img/header-bg.jpg) repeat;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.header_info_box {
+	position: relative;
+    top: 45px;
+    max-width: 1020px;
+}
+
+.header_info_box_logo_td {
+	padding: 25px 20px;
+	width: 90px;
+}
+
+/*.header_info_box_phone_td {
+	padding-top: 5px;
+}*/
+
+.header_shopping_box_td {
+	width: 365px;
+}
+
+.header_text {
+	font-size: 16px;
+	font-family: 'Roboto Light';
+	margin-bottom: 3px;
+}
+
+.header_info_box_phone_icon {
+	width: 85px;
+	margin: 0px 16px 0px 40px;
+	opacity: 0.9;
+	float: left;
+}
+
+.header_arrows {
+	background: url(../img/head_arrows.png) repeat-x;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.shopping_box_link {
+	font-size: 18px;
+	font-family: 'Roboto Light';
+	text-decoration: none!important;
+}
+
+.shopping_par {
+	display: block;
+	width: 112px;
+	margin-bottom: 3px;
+	border-bottom: 1px solid grey;
+}
+
+.shopping_info_par {
+	display: block;
+}
+
+.shopping_info_box {
+	display: block;
+	float: left;
+	color: grey;
+}
+
+.shopping_info_box p {
+	margin-bottom: 2px;
+}
+
+.shopping_login_links {
+	margin-top: -2px;
+}
+
+.shopping_login_links a{
+	color: grey!important;	
+}
+
+.shopping_login_links a:hover {
+	color: #3aa51a!important;
+}
+
+.vk_icon {
+	height: 24px;
+    width: 24px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+}
+
+.social-text {
+	font-family: 'Roboto Light', 'Calibri';
+	font-size: 16px;
+}
+
+.main-navigation {
+	height: 64px;
+	background: white;
+	margin-top: 40px;
+	max-width: 1020px;
+	background: #3b4350;
+
+}
+
+.main-navigation ul {
+	list-style-type: none;
+	color: white;
+	font-family: 'Roboto Regular', 'Calibri';
+	font-size: 18px;
+	z-index: 100;
+}
+
+.main-navigation li {
+	float: left;
+	list-style-type: none;
+	margin: 0px 5px;
+	padding: 20px 7px;
+}
+
+.main-navigation li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding-left: 30px;
+	text-shadow: 1px 1px 0px rgba(42, 46, 58, 1);
+}
+
+.main-navigation li a:hover {
+	text-decoration:underline;
+}
+
+.with-separator {
+	display: block;
+	content: '';
+	background: url('../img/dotted-border.png') 0px 5px;
+	height: 25px;
+	background-repeat: repeat-y;
+}
+
+.first_menu{
+background: none!important;
+
+}
+
+
+.main-navigation-second-level {
+	display: none;
+	position: absolute;
+	margin-top: 40px;
+	background: #424242;
+	
+}
+
+.main-navigation-second-level li{
+	float: none;
+	font-size: 16px;
+	font-family: 'Roboto Light', 'Calibri';
+	display: block;
+	padding: 10px;
+	min-width: 200px;
+	/* padding: 12px 15px 0px 10px;*/
+}
+
+.main-navigation-second-level li a {
+	padding-left: 10px;
+	float: none;
+}
+
+.ul-link:hover .main-navigation-second-level{
+	display: block;
+} 
+

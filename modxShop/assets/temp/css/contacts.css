@@ -1,0 +1,35 @@
+.contacts_head{
+
+	/*padding: 10px*/
+
+}
+.contacts_about{
+
+	padding-left: 20px;
+}
+.contacts_adress{
+
+	list-style-type: none!important;
+}
+
+.contacts_feedback{
+	margin: 10px auto;
+}
+.contacts_name_feedback{
+
+	margin-bottom: 0px!important;
+	margin-left: 5px!important;
+}
+
+.center-align {
+	max-width: 980px;
+	margin: 0 40px 30px 40px;
+}
+
+.contacts_input, .form-control {
+	margin-top: 3px;
+}
+
+.breadcrumb a {
+	color: #3aa51a;
+}

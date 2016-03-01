@@ -1,0 +1,26 @@
+.faq_head{
+
+	padding-left: 20px;
+}
+
+.name_inform{
+	margin: 10px;
+
+}
+
+.inform_block_bord{
+border-bottom:1px dashed #8F9189;
+
+}
+
+.inform_text_bord{
+	margin-top: 20px;
+}
+.strong_inform_text_bord{
+	white-space: nowrap;
+    font-weight:600;
+}
+
+.table_banks img {
+	margin: 4px;
+}

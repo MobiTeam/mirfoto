@@ -1,0 +1,51 @@
+Changelog for getPage.
+
+getPage 1.2.4-pl (March 24, 2014)
+====================================
+- [#19] Add scriptProperties to cachePageKey signature
+- [#24] Cache total results number into correct variable name
+
+getPage 1.2.3-pl (June 20, 2012)
+====================================
+- [#15] Add ability to specify pageNavScheme for navigation links
+- [#14] Avoid adding pageVarKey to query string when page = 1
+- [#12] Fix cacheKey when multi-dimensional arrays used in $_REQUEST
+
+getPage 1.2.2-pl (December 9, 2011)
+====================================
+- Check $_GET before $_REQUEST for pageVarKey and limit overrides
+- [#6] Add pageOneLimit to allow different limit on first results page
+
+getPage 1.2.1-pl (September 15, 2011)
+====================================
+- Remove inadvertent debugging statement in snippet code
+
+getPage 1.2.0-pl (September 14, 2011)
+====================================
+- [#5] Add pageNavOuterTpl for layout control of page nav elements
+- Allow limit of 0 in $_REQUEST to bypass paging
+- Allow empty nav tpl parameters
+- Allow unlimited page listing with &pageLimit=`0`
+
+getPage 1.1.0-pl (March 27, 2011)
+====================================
+- Change default cacheKey property to use 'resource' (for MODX 2.1+)
+
+getPage 1.0.0-pl (August 18, 2010)
+====================================
+- Add support for snippets that send output toPlaceholder
+- Add firstItem and lastItem properties/placeholders
+- Add pageActiveTpl to differentiate current page link
+
+getPage 1.0.0-rc1 (June 29, 2010)
+====================================
+- Add per page caching capabilities
+- Add changelog, license, and readme
+
+getPage 1.0.0-beta2 (May 28, 2010)
+====================================
+- Preserve additional query string parameters when creating paging navigation
+
+getPage 1.0.0-beta1 (March 19, 2010)
+====================================
+- Initial release

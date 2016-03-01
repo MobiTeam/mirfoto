@@ -1,0 +1,43 @@
+.floating-insertion-indicator {
+    position: absolute;
+    background-color: #77BC71;
+    width: 4px;
+}
+.gal-item-inactive {
+    opacity: 0.5;
+}
+/* unnecessary as defined in default styles */
+/*.green { color: green; }
+.red { color: red; }*/
+
+.gal-detail-active {
+     float: right;
+}
+.gal-view-item-albums {
+    overflow:auto;
+    border-top: 1px solid #E4E4E4;
+    margin-top: 7px;
+}
+
+.gal-item-thumb {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.gal-item-update-preview {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2px;
+}
+
+#gal-album-items-detail {
+    border-left: 1px solid #E4E4E4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 0 !important; /* override default modx theme styles for .x-column */
+}
+
+.modx-browser-thumb-wrap .gal-item-thumb {
+    height: 100px;
+}

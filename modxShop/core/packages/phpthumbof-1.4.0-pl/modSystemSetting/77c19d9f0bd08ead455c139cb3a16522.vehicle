@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'phpthumbof',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6b77318db5e97f1bc492ddc54f36d025',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '77c19d9f0bd08ead455c139cb3a16522',
+  'native_key' => 'phpthumbof.cache_url',
+  'object' => '{"key":"phpthumbof.cache_url","value":"","xtype":"textfield","namespace":"phpthumbof","area":"paths","editedon":null}',
+);

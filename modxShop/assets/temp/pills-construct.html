@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/constr.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/main_content.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/constr.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+</head>
+<body>
+	
+	<div class="before-header">
+		<div class="container" style="max-width:1020px;">
+			<ul class="before-header-menu">
+				<li><a href="faq.html">Доставка</a></li>
+				<li><a href="faq.html">Оплата</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<div class="social-network-info">
+				<p class="social-text pull-right">Мы в социальных сетях: <a href="http://vk.com/mirfotohm"><img class="vk_icon" src="img/vk_icon.png"></a></p>
+			</div>			
+		</div>		
+	</div>
+	
+	<div class="header">
+		<table class="header_info_box container" style="min-width:1024px;">
+			<tr>
+				<td class="header_info_box_logo_td">
+					<a href="index.html">
+						<img src="img/logotype.png" />
+					</a>
+				</td>
+				<td class="header_info_box_phone_td">  
+					<img class="header_info_box_phone_icon" src="img/phone-large-icon.png" />
+					<p class="header_text">Работаем ежедневно с 9:00 до 20:00</p>
+					<p class="header_text important_text">8 945 399 16 368</p>
+					<p class="header_text">г.Ханты-Мансийск, ул. Светлая - 67</p>
+				</td>
+				<td class="header_shopping_box_td">
+					<img class="header_info_box_phone_icon" src="img/shopping-box.png" />
+					<div class="shopping_info_box">
+						<p class="shopping_par"><a href="#" class="shopping_box_link">Моя корзина</a></p>
+						<p class="shopping_info_par">В корзине нет товаров</p>
+						<p class="shopping_login_links"><!-- <span><a href="#">Войти</a></span> --> <span><a href="#">Оформить заказ</a></span></p>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div class="main-navigation container" style="min-width: 1024px;">
+			<ul>
+				<li class="ul-link">
+					<a href="#">Фото-товары</a>
+					<ul class="main-navigation-second-level"> 
+			          <li><a href="#">Альбомы</a></li>
+			          <li><a href="#">Рамки</a></li>
+			          <li><a href="#">USB / microSD / CD флешки</a></li>
+			          <li><a href="#">Аксессуары для iOS и Android</a></li>
+			          <li><a href="#">Канцтовары</a></li>
+			        </ul> 
+				</li>
+				<li class="ul-link">
+					<a class="with-separator" href="phone-construct.html">Печать на чехлах</a>
+				</li>
+				<li class="ul-link">
+					<a class="with-separator" href="pills-construct.html">Подушки</a>
+				</li>
+				<li class="ul-link"><a class="with-separator" href="#">Футболки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Подушки</a></li>
+				<li class="ul-link"><a class="with-separator" href="#">Прочие услуги</a></li>
+			</ul>
+		</div>
+
+		<div class="header_arrows">
+			
+		</div>
+	</div>
+
+
+	<div class="content" style="max-width:1024px; margin: 0 auto 80px; font-family: 'Roboto Light', 'Calibry';">
+
+		<ol class="breadcrumb">
+		  <li><a href="index.html">Главная</a></li>
+		  <li class="active">Печать на подушках</li>
+		</ol>
+	
+		<h2>Конструктор подушек</h2>
+		<hr>
+
+		<div class="container inclide_box" style="margin-top:20px">
+				<div class="phone-design-box col-xs-6 canvas-block">
+					<div class="form-group resize-buttons">
+						<button class="plus_button" onclick="scalling(0.1)"></button>
+						<button class="minus_button" onclick="scalling(-0.1)"></button>						
+					</div>
+					<canvas id="map_layout" height="500" width="500"></canvas>		
+							
+				</div>
+				<div class="col-xs-6 pull-right">
+					<h4 class="phone_title_cr">Подушка квадрат 34х34 см</h4> <span class="price_pill_cr"><span class="price_pill_value">800</span> Руб.</span>
+					<h3 class="constr_h3">Выберите подушку:</h3>
+					
+					<div class="form-group">
+						<div class="FonBoxPills">
+						    <div class="fon-item" onclick="changeColorPill('gold');">
+						    	<img src="img/gold-pillow.png"/>
+						    </div>
+
+						    <div class="fon-item" onclick="changeColorPill('lgold');">
+						    	<img src="img/lgold-pillow.png"/>
+						    </div>
+
+							<div class="fon-item" onclick="changeColorPill('dblue');">
+						    	<img src="img/dblue-pillow.png"/>
+						    </div>
+
+						    <div class="fon-item" onclick="changeColorPill('red');">
+						    	<img src="img/red-pillow.png"/>
+						    </div>
+
+						    <div class="fon-item" onclick="changeColorPill('green');">
+						    	<img src="img/green-pillow.png"/>
+						    </div>
+
+						    <div class="fon-item" onclick="changeColorPill('blue');">
+						    	<img src="img/blue-pillow.png"/>
+						    </div>
+						    <div style="clear:both;"></div>
+						</div>	
+					</div>
+
+	
+					<div class="form-group">
+						<label for="setTextColorCh">Добавить текст:</label>
+					    <input type="checkbox" class="setTextColorCh" onchange="TextColorToggle();" />
+					    <div class="TextColorBox">
+					         <label for="inputText" style="margin-right:6px;">Шрифт:</label>
+					    	<select class="fontSelector selectpicker" name="inputText" id="inputText" onchange="changeFontText()">
+							  	<option selected>Arial Black</option>
+							  	<option>DsNarrow</option>
+							  	<option>BigNoodLetitling</option>
+							  	<option>Massacre</option>
+							  	<option>Elzevir</option>
+							  	<option>Amsterdam</option>
+						  	</select>
+					         <label for="inputText" style="margin-top:5px;">Надпись:</label><br>
+					         <textarea onkeyup="addTextOnCanvas()" class="entered-text form-control input-small no-resize" id="inputText" placeholder="Введите текст"></textarea><br>
+					    	<!-- <input type="text" onkeyup="addTextOnCanvas()" class="entered-text form-control input-small" id="inputText" placeholder="Введите текст">  -->
+						    <label for="setTextColor">Цвет текста:</label>	
+						    <div class="color color-text setTextColor" style="height: 20px; width: 20px; display: inline-block; 
+    vertical-align: middle; margin: 0px 2px; background: black;"></div>
+    						<br>
+    						<label for="strokeCheckbox">Обводка:</label>	
+						    <input type="checkbox" class="strokeCheckbox" onchange="setStroke();" />
+						    <label for="strokeColorCheckbox">Цвет обводки:</label>	
+						    <div class="color color-stroke strokeColor" style="height: 20px; width: 20px; display: inline-block; 
+    vertical-align: middle; margin: 0px 2px; background: black;"></div>
+					    	<div id="slider"></div>
+						</div>						
+					</div>
+
+					<div class="form-group">
+						<form action="php_constr/handler.php" method="post" id="my_form" enctype="multipart/form-data">
+						  <label for="you-image" style="margin-right:5px;">Своя картинка:</label>
+						  <span class="btn btn-default btn-file">
+						    Выбрать <input type="file" name="images" id="you-image" onchange="$('#my_form').submit()">
+							</span>
+						  <input type="submit" style="display:none;" id="submit" value="Отправить">
+						</form>
+					</div>
+					<button class="btn-lg btn-success" style="width:330px; margin-left: 5px; border: none;">
+					<i class="glyphicon glyphicon-shopping-cart"></i>
+						Положить в корзину
+					</button>				   
+									<!-- <input class="rotation-button" type="button" value="Повернуть" onclick="rotateCanvas()" /> -->
+				</div>
+	
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+
+<div class="footer">
+		<div class="footer-navigation">
+			<ul class="container">
+				<li><a class="" href="#">О нас</a></li>
+				<li><a class="with-separator" href="contacts.html">Мы на карте</a></li>
+				<li><a class="with-separator" href="faq.html">Доставка</a></li>
+				<li><a class="with-separator" href="faq.html">Оплата</a></li>
+			</ul>
+		</div>
+		<table class="container footer-table" style="max-width:1020px;">
+			<tr>
+
+				<td class="phone-td">
+					<span class="phone-num">8 945 399 16 368</span><br>
+					Работаем с 9:00 - 20:00 Пн-Вск
+				</td>
+				<td style="padding: 23px 19px 0px;">
+					 Email: ouremail@mirfoto.ru<br>
+					 г.Ханты-Мансийск, ул. Светлая - 67
+				</td>
+			</tr>
+			<tr>
+				<td class="no-paddings" colspan="2">
+					<div class="copyright">
+						"Мир-Фото" - 2016 г.
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+		<script src="js/jquery-2.2.0.js"></script>
+		<script src="js/pills-constr.js"></script>
+		<script src="js/fabric.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/bootstrap-select.min.js"></script>
+	    <script src="js/jqColorPicker.min.js"></script>
+	    <script src="js/ajaxFile.js"></script>
+	    <script src="js/jquery-ui.min.js"></script>
+	
+	
+</body>
+</html>
+

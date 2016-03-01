@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'shopkeeper3',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ce6f1e4c60d94dc0107b800b9aaecaa7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ed45a4cb50d496c33c06625e98ec9f03',
+  'native_key' => 'shk3.mail_contacts_row_tpl',
+  'object' => '{"key":"shk3.mail_contacts_row_tpl","value":"mailContactsRow","xtype":"textfield","namespace":"shopkeeper3","area":"","editedon":null}',
+);

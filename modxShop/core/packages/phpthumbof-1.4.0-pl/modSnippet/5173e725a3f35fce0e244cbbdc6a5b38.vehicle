@@ -1,0 +1,28 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'namespace' => 'phpthumbof',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"phpthumbof-1.4.0-pl\\/modSnippet\\/5173e725a3f35fce0e244cbbdc6a5b38\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"phpthumbof"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"phpthumbof-1.4.0-pl\\/modSnippet\\/5173e725a3f35fce0e244cbbdc6a5b38\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"phpthumbof"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7b8973e12472856190ea0da40648d2ac',
+  'package' => 'modx',
+  'class' => 'modSnippet',
+  'signature' => '5173e725a3f35fce0e244cbbdc6a5b38',
+  'native_key' => NULL,
+  'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"phpthumbof","description":"A custom output filter that generates thumbnails securely with phpThumb.","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * phpThumbOf\\n *\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * phpThumbOf is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package phpthumbof\\n *\\/\\n\\/**\\n * A custom output filter for phpThumb\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var phpThumbOf $phpThumbOf\\n * @var string $input\\n * @var string|array $options\\n *\\n * @package phpthumbof\\n *\\/\\nif (empty($modx)) return \'\';\\nif (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');\\n    return \'\';\\n}\\nif (empty($input)) {\\n    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');\\n    return \'\';\\n}\\n$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\nrequire_once $modelPath.\'phpthumbof\\/phpthumbof.class.php\';\\n$phpThumbOf = new phpThumbOf($modx,$scriptProperties);\\n\\n$phpThumbOf->getCacheDirectory();\\n$phpThumbOf->ensureCacheDirectoryIsWritable();\\n\\n$thumbnail = $phpThumbOf->createThumbnailObject();\\n$thumbnail->setInput($input);\\n$thumbnail->setOptions($options);\\n$thumbnail->initializeService();\\nreturn $thumbnail->render();","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * phpThumbOf\\n *\\n * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>\\n *\\n * phpThumbOf is free software; you can redistribute it and\\/or modify it\\n * under the terms of the GNU General Public License as published by the Free\\n * Software Foundation; either version 2 of the License, or (at your option) any\\n * later version.\\n *\\n * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple\\n * Place, Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package phpthumbof\\n *\\/\\n\\/**\\n * A custom output filter for phpThumb\\n *\\n * @var modX $modx\\n * @var array $scriptProperties\\n * @var phpThumbOf $phpThumbOf\\n * @var string $input\\n * @var string|array $options\\n *\\n * @package phpthumbof\\n *\\/\\nif (empty($modx)) return \'\';\\nif (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model\\/phpthumb\\/\',true,true)) {\\n    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');\\n    return \'\';\\n}\\nif (empty($input)) {\\n    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');\\n    return \'\';\\n}\\n$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components\\/phpthumbof\\/\').\'model\\/\';\\nrequire_once $modelPath.\'phpthumbof\\/phpthumbof.class.php\';\\n$phpThumbOf = new phpThumbOf($modx,$scriptProperties);\\n\\n$phpThumbOf->getCacheDirectory();\\n$phpThumbOf->ensureCacheDirectoryIsWritable();\\n\\n$thumbnail = $phpThumbOf->createThumbnailObject();\\n$thumbnail->setInput($input);\\n$thumbnail->setOptions($options);\\n$thumbnail->initializeService();\\nreturn $thumbnail->render();"}',
+);

@@ -1,0 +1,58 @@
+.catalogs {
+    padding-top: 10px; 
+}
+
+
+.catalog_caption {
+    height: 80px;
+    overflow: hidden;
+}
+
+.catalog_caption h4 {
+    white-space: nowrap;
+    font-weight:500;
+}
+
+.thumbnail_catalogs img {
+    width: 100%;
+}
+.thumbnail_catalogs:hover{
+    opacity:0.95;
+    transition: 0.25s linear;      
+    box-shadow: 0 0 8px rgba(0,0,0,0.5); 
+}
+
+.ratings {
+    
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail_catalogs {
+    padding: 0;
+}
+
+.thumbnail_catalogs {
+    padding: 9px;
+    color: #333;
+}
+.info_catalogs{
+
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+.btn-catalogs{
+    float: right;
+/*    padding-left: 10px;
+    padding-right: 10px;*/
+    width: 80px;
+    margin-right: 15px;
+    margin-top: -6px;
+
+}
+
+.submenu {
+    padding-left: 5px;
+}

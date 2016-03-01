@@ -1,0 +1,149 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '828368777590027dc0ea967c108bc7d8' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVInputRenderList","priority":0,"propertyset":0}',
+        'guid' => '7526bfa78b6aedc4351191609206c42f',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVInputRenderList',
+        ),
+        'signature' => '253b3fcb8c16980197784f0ea8f764c3',
+      ),
+      'f021074c05d737b6caf87733cdff9786' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVInputPropertiesList","priority":0,"propertyset":0}',
+        'guid' => 'ff5c7f8cef2aa9063ee2ede1b528d8e5',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVInputPropertiesList',
+        ),
+        'signature' => '25ab021f7965e5873ea390a19ebb7e6b',
+      ),
+      'af79ab9f2e484c7964b894437af058dd' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVOutputRenderList","priority":0,"propertyset":0}',
+        'guid' => '11d940eac03cd45514e7dd978d2ff32e',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVOutputRenderList',
+        ),
+        'signature' => '7e4dcef63af1a45d0fe9390a3e2da080',
+      ),
+      '62a3b96dea119f57259ab148d5a52267' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnTVOutputRenderPropertiesList","priority":0,"propertyset":0}',
+        'guid' => '81fe0e53e9a3bcc3f3f11b069659d53c',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnTVOutputRenderPropertiesList',
+        ),
+        'signature' => '0683e513a05ed9b6cd8559ece5a7582d',
+      ),
+      '084dad98628d91623db2f61fc425b182' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+        'guid' => '801d4785db15200a493c146d7a255a1d',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnDocFormPrerender',
+        ),
+        'signature' => '79b253acdc5605b3381e411695e402a1',
+      ),
+      'b8b3c3aebf330a14ef2578c9825d9b42' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+        'guid' => '9d95644a7b71dd8639f40450209206bd',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnManagerPageBeforeRender',
+        ),
+        'signature' => '821d8782adf1869b9c9fd00fbf543c27',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'gallery',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c3b93a4b270192644f523af3aaec0fc0',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '80b9dd4dfefae1c47d6b130ccce4fa4e',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"GalleryCustomTV","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * Handles plugin events for Gallery\'s Custom TV\\n * \\n * @package gallery\\n *\\/\\n$corePath = $modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\');\\nswitch ($modx->event->name) {\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVOutputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/output\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/inputoptions\\/\');\\n        break;\\n    case \'OnTVOutputRenderPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/properties\\/\');\\n        break;\\n    case \'OnManagerPageBeforeRender\':\\n        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\').\'model\\/gallery\\/\',$scriptProperties);\\n        if (!($gallery instanceof Gallery)) return \'\';\\n\\n        $snippetIds = \'\';\\n        $gallerySnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'Gallery\'));\\n        if ($gallerySnippet) {\\n            $snippetIds .= \'GAL.snippetGallery = \\"\'.$gallerySnippet->get(\'id\').\'\\";\'.\\"\\\\n\\";\\n        }\\n        $galleryItemSnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'GalleryItem\'));\\n        if ($galleryItemSnippet) {\\n            $snippetIds .= \'GAL.snippetGalleryItem = \\"\'.$galleryItemSnippet->get(\'id\').\'\\";\'.\\"\\\\n\\";\\n        }\\n\\n        $jsDir = $modx->getOption(\'gallery.assets_url\',null,$modx->getOption(\'assets_url\').\'components\\/gallery\\/\').\'js\\/mgr\\/\';\\n        $modx->controller->addLexiconTopic(\'gallery:default\');\\n        $modx->controller->addJavascript($jsDir.\'gallery.js\');\\n        $modx->controller->addJavascript($jsDir.\'tree.js\');\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            GAL.config.connector_url = \\"\'.$gallery->config[\'connectorUrl\'].\'\\";\\n            \'.$snippetIds.\'\\n        });\\n        <\\/script>\');\\n        break;\\n    case \'OnDocFormPrerender\':\\n        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\').\'model\\/gallery\\/\',$scriptProperties);\\n        if (!($gallery instanceof Gallery)) return \'\';\\n\\n        \\/* assign gallery lang to JS *\\/\\n        $modx->controller->addLexiconTopic(\'gallery:tv\');\\n\\n        \\/* @var modAction $action *\\/\\n        $action = $modx->getObject(\'modAction\',array(\\n            \'namespace\' => \'gallery\',\\n            \'controller\' => \'index\',\\n        ));\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            GAL.config = {};\\n            GAL.config.connector_url = \\"\'.$gallery->config[\'connectorUrl\'].\'\\";\\n            GAL.action = \\"\'.($action ? $action->get(\'id\') : 0).\'\\";\\n        });\\n        <\\/script>\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/Spotlight.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/gallery.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/widgets\\/album\\/album.items.view.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/widgets\\/album\\/album.tree.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/gal.browser.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/galtv.js\');\\n        $modx->controller->addCss($gallery->config[\'cssUrl\'].\'mgr.css\');\\n        break;\\n}\\nreturn;","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * Handles plugin events for Gallery\'s Custom TV\\n * \\n * @package gallery\\n *\\/\\n$corePath = $modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\');\\nswitch ($modx->event->name) {\\n    case \'OnTVInputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/input\\/\');\\n        break;\\n    case \'OnTVOutputRenderList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/output\\/\');\\n        break;\\n    case \'OnTVInputPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/inputoptions\\/\');\\n        break;\\n    case \'OnTVOutputRenderPropertiesList\':\\n        $modx->event->output($corePath.\'elements\\/tv\\/properties\\/\');\\n        break;\\n    case \'OnManagerPageBeforeRender\':\\n        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\').\'model\\/gallery\\/\',$scriptProperties);\\n        if (!($gallery instanceof Gallery)) return \'\';\\n\\n        $snippetIds = \'\';\\n        $gallerySnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'Gallery\'));\\n        if ($gallerySnippet) {\\n            $snippetIds .= \'GAL.snippetGallery = \\"\'.$gallerySnippet->get(\'id\').\'\\";\'.\\"\\\\n\\";\\n        }\\n        $galleryItemSnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'GalleryItem\'));\\n        if ($galleryItemSnippet) {\\n            $snippetIds .= \'GAL.snippetGalleryItem = \\"\'.$galleryItemSnippet->get(\'id\').\'\\";\'.\\"\\\\n\\";\\n        }\\n\\n        $jsDir = $modx->getOption(\'gallery.assets_url\',null,$modx->getOption(\'assets_url\').\'components\\/gallery\\/\').\'js\\/mgr\\/\';\\n        $modx->controller->addLexiconTopic(\'gallery:default\');\\n        $modx->controller->addJavascript($jsDir.\'gallery.js\');\\n        $modx->controller->addJavascript($jsDir.\'tree.js\');\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            GAL.config.connector_url = \\"\'.$gallery->config[\'connectorUrl\'].\'\\";\\n            \'.$snippetIds.\'\\n        });\\n        <\\/script>\');\\n        break;\\n    case \'OnDocFormPrerender\':\\n        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components\\/gallery\\/\').\'model\\/gallery\\/\',$scriptProperties);\\n        if (!($gallery instanceof Gallery)) return \'\';\\n\\n        \\/* assign gallery lang to JS *\\/\\n        $modx->controller->addLexiconTopic(\'gallery:tv\');\\n\\n        \\/* @var modAction $action *\\/\\n        $action = $modx->getObject(\'modAction\',array(\\n            \'namespace\' => \'gallery\',\\n            \'controller\' => \'index\',\\n        ));\\n        $modx->controller->addHtml(\'<script type=\\"text\\/javascript\\">\\n        Ext.onReady(function() {\\n            GAL.config = {};\\n            GAL.config.connector_url = \\"\'.$gallery->config[\'connectorUrl\'].\'\\";\\n            GAL.action = \\"\'.($action ? $action->get(\'id\') : 0).\'\\";\\n        });\\n        <\\/script>\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/Spotlight.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/gallery.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/widgets\\/album\\/album.items.view.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/widgets\\/album\\/album.tree.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/gal.browser.js\');\\n        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js\\/mgr\\/tv\\/galtv.js\');\\n        $modx->controller->addCss($gallery->config[\'cssUrl\'].\'mgr.css\');\\n        break;\\n}\\nreturn;"}',
+);
